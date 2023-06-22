@@ -1,0 +1,173 @@
+/* makes sizing simpler */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+  font-family: RedHatDisplay;
+}
+  
+body,html {
+  min-height: 100vh;
+
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image:url(pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+@media (width > 375px){
+  .all{
+    background-image:url(pattern-background-desktop.svg);
+  }
+}
+
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem;
+  padding: 0rem;
+  background-color: hsl(225, 100%, 98%);
+  max-width: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+p{
+  padding: 1rem;
+}
+
+.plan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem;
+  margin: 1rem;
+  background-color: hsla(225, 100%, 94%, 45%);
+  width: 100%;
+  border-radius: 15px;
+}
+
+.plan > p{
+  padding: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* background-color: ; */
+  
+}
+.ap{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: .8rem;
+}
+.change{
+  padding-right: 0;
+  font-size: .8rem;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.change:hover{
+  color: hsl(245, 75%, 52%,60%);
+}
+
+.payment{
+  background-color: hsl(245, 75%, 52%);
+}
+h1{
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+h2{
+  font-weight: 700;
+  padding-bottom: .25rem;
+  white-space: nowrap; 
+}
+
+h3{
+  color:hsl(224, 23%, 55%);
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+h6{
+  font-weight: 700;
+  color:hsl(224, 23%, 55%);
+  padding: 1.3rem;
+  font-size: .8rem;
+  
+}
+
+h6:hover{ 
+  color:hsl(223, 47%, 23%) ;
+}
+
+h5{
+  font-weight: 700;
+  display:block;
+  color:white;
+  padding: .7rem;
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  border-radius: 10px;
+  font-size: 80%;
+}
+
+h5:hover{
+  background-color: hsl(245, 75%, 52%,60%);
+}
+
+h4{
+  
+  color:hsl(224, 23%, 55%);
+}
+
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(RedHatDisplay-VariableFont_wght.ttf);
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+
+
